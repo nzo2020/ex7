@@ -13,9 +13,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     ImageButton btn;
 
-
     ImageView iv;
-
     int rndNumber;
 
 
