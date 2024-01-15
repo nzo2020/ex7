@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import java.util.Random;
@@ -19,12 +18,16 @@ public class MainActivity extends AppCompatActivity {
 
     int rndNumber;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.btn);
         iv = findViewById(R.id.iv);
+        btn.setImageResource(R.drawable.pictureeee);
+
 
 
     }
@@ -34,15 +37,20 @@ public class MainActivity extends AppCompatActivity {
     public void clicked(View view) {
         Random rnd = new Random();
         rndNumber= rnd.nextInt(3)+1;
-        btn.setImageResource(R.drawable.picturee);
         if (rndNumber==1){
-            iv.setImageResource(R.drawable.pic);
+            iv.setImageResource(R.drawable.gossip_girl);
+            btn.setImageResource(R.drawable.picturee);
+
         }
         if (rndNumber==2){
-            iv.setImageResource(R.drawable.pictu);
+            iv.setImageResource(R.drawable.lucifer);
+            btn.setImageResource(R.drawable.pictureeeeee);
+
         }
         if (rndNumber==3){
-            iv.setImageResource(R.drawable.pictur);
+            iv.setImageResource(R.drawable.galis);
+            btn.setImageResource(R.drawable.pictureeeeeee);
+
         }
     }
 }
